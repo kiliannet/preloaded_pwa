@@ -6,8 +6,9 @@ overlay.style.cssText = `
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
@@ -49,7 +50,7 @@ document.head.appendChild(style);
 
 // Function to hide the overlay
 function hideOverlay() {
-  overlay.style.display = 'none';
+  // overlay.style.display = 'none';
 }
 
 // Add an event listener to hide the overlay when all external JS files are loaded
